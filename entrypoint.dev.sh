@@ -22,5 +22,9 @@ echo "Database is ready!"
 echo "Setting up database..."
 bundle exec rails db:prepare
 
+# Install Node.js dependencies
+echo "Installing Node dependencies..."
+npm install
+
 # Run the container's main process
 exec "$@"
